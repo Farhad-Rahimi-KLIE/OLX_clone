@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="olx_chatbox.css" />
+    <title>Chat Box</title>
+  </head>
+  <body>
+    <!-- =============================navbar================================ -->
+
+    <div class="header">
+      <div class="navbar">
+        <img src="OLX-Logo.png" />
+
+        <div class="country_select" id="country">
+          <div class="select">
+            <p id="text">Select Your Country</p>
+          </div>
+
+          <ul class="option_box" id="list">
+            <li class="option" onclick="myfunction('USA')">
+              <p>USA</p>
+            </li>
+            <li class="option" onclick="myfunction('Canada')">
+              <p>Canada</p>
+            </li>
+            <li class="option" onclick="myfunction('India')">
+              <p>India</p>
+            </li>
+            <li class="option" onclick="myfunction('Afganistan')">
+              <p>Afganistan</p>
+            </li>
+            <li class="option" onclick="myfunction('Nepal')">
+              <p>Nepal</p>
+            </li>
+          </ul>
+        </div>
+        <div class="search-box">
+          <input
+            type="text"
+            class="searchclass"
+            id="searchid"
+            placeholder="Find Cars, mobile Phone and More" />
+        </div>
+
+        <div class="language">
+          <p id="eng_tag">English</p>
+
+          <ul class="hin_eng">
+            <li onclick="languageolx('English')">English</li>
+            <li onclick="languageolx('Farsi')">Farsi</li>
+          </ul>
+        </div>
+
+        <div class="yuor_logo">
+          <div class="girls_img" id="girl_img_id">
+            <img src="image/1.jpg" alt="" />
+          </div>
+
+          <div class="dropdown" id="dropdownid">
+            <div class="nameandimg">
+              <img src="image/1.jpg" />
+              <p>Puja varma</p>
+            </div>
+
+            <ul>
+              <li>
+                <p>My Account</p>
+              </li>
+              <li>
+                <p>My Order</p>
+              </li>
+              <li>
+                <p>Help</p>
+              </li>
+              <li>
+                <p>Settings</p>
+              </li>
+              <li>
+                <p>Log Out</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============================= Chat Box ================================ -->
+
+    <div class="chat_box">
+      <div class="heading_chatbox">
+        <div class="img_name_chat">
+          <img src="image/17.jpg" />
+          <h2>Farhad Klie</h2>
+        </div>
+      </div>
+
+      <div class="see_chat">
+        <h3 id="message">fd</h3>
+      </div>
+
+      <div class="send_message">
+        <input type="text" placeholder="Type a Message" id="text_message" />
+        <svg
+          id="telegram"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 496 512">
+          <path
+            d="M248,8C111.033,8,0,119.033,0,256S111.033,504,248,504,496,392.967,496,256,384.967,8,248,8ZM362.952,176.66c-3.732,39.215-19.881,134.378-28.1,178.3-3.476,18.584-10.322,24.816-16.948,25.425-14.4,1.326-25.338-9.517-39.287-18.661-21.827-14.308-34.158-23.215-55.346-37.177-24.485-16.135-8.612-25,5.342-39.5,3.652-3.793,67.107-61.51,68.335-66.746.153-.655.3-3.1-1.154-4.384s-3.59-.849-5.135-.5q-3.283.746-104.608,69.142-14.845,10.194-26.894,9.934c-8.855-.191-25.888-5.006-38.551-9.123-15.531-5.048-27.875-7.717-26.8-16.291q.84-6.7,18.45-13.7,108.446-47.248,144.628-62.3c68.872-28.647,83.183-33.623,92.511-33.789,2.052-.034,6.639.474,9.61,2.885a10.452,10.452,0,0,1,3.53,6.716A43.765,43.765,0,0,1,362.952,176.66Z" />
+        </svg>
+      </div>
+    </div>
+
+    <script>
+      let country = document.getElementById("country");
+      let text = document.getElementById("text");
+      let list = document.getElementById("list");
+
+      country.addEventListener("click", () => {
+        list.classList.toggle("hidden");
+      });
+      function myfunction(frk) {
+        text.innerHTML = frk;
+      }
+
+      let eng_tag = document.getElementById("eng_tag");
+      let hin_eng = document.querySelector(".hin_eng");
+      let language = document.querySelector(".language");
+      language.addEventListener("click", () => {
+        hin_eng.classList.toggle("display_div");
+      });
+
+      function languageolx(anyone) {
+        eng_tag.innerHTML = anyone;
+      }
+
+      let girls_img_id = document.getElementById("girl_img_id");
+      let dropdown = document.querySelector(".dropdown");
+
+      girls_img_id.addEventListener("click", () => {
+        dropdown.classList.toggle("block_div");
+      });
+
+      //  ============================= Send Message ================================
+
+      let Telegram = document.getElementById("telegram");
+      let Message = document.getElementById("message");
+      let text_message = document.getElementById("text_message");
+      Telegram.addEventListener("click", () => {
+        Message.innerHTML = text_message.value;
+        Message.style = "display:block";
+      });
+    </script>
+  </body>
+</html>

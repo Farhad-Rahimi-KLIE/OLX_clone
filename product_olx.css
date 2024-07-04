@@ -1,0 +1,300 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+/* <!-- =============================navbar================================ --> */
+body{
+    background-color: #f2f4f5;
+}
+.header{
+    background-color: #f7f8f9;
+    box-shadow: 0 0 2px gray;
+    position: sticky;
+    top: 0%;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    width: 1300px;
+    margin: auto;
+}
+.navbar img{
+    width: 70px;
+}
+.country_select{
+    width: 250px;
+    margin-left: 70px;
+}
+.select{
+    width: 100%;
+    padding: 10px 10px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 6px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border: 2px solid black;
+}
+.option{
+    display: flex;
+    padding: 10px;
+    width: 250px;
+    cursor: pointer;
+}
+.option:hover{
+    background-color: #c7dcff;
+}
+.option p{
+    margin-left: 10px;
+    color: #444444;
+}
+.option_box{
+    box-shadow: 0 0 10px grey;
+    background-color: white;
+    display: none;
+    position: absolute;
+    top: 60px;
+}
+.hidden{
+    display: block;
+}
+.search_box{
+    display: flex;
+}
+.searchclass{
+    padding: 10px;
+    width: 400px;
+    font-size: 15px;
+    border: 2px solid black;
+    border-radius: 6px 6px 6px 6px;
+    margin-left: 30px;
+}
+#eng_tag{
+    cursor: pointer;
+    font-size: 18px;
+    margin-left: 25px;
+}
+.hin_eng{
+    background-color: white;
+    box-shadow: 0 0 10px gray;
+    width: 130px;
+    display: none;
+    position: absolute;
+    top: 60px;
+}
+.hin_eng li{
+    list-style: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+}
+.hin_eng li:hover{
+    background-color: #c7dcff;
+}
+.display_div{
+    display: block;
+}
+.girls_img img{
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 55px;
+}
+.nameandimg img{
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+}
+.nameandimg p{
+    font-size: 18px;
+    font-weight: bold;
+}
+.nameandimg{
+    display: flex;
+    align-items: center;
+    margin: 10px 0 20px 0;
+}
+.dropdown{
+    width: 250px;
+    box-shadow: 0 0 10px gray;
+    padding: 15px;
+    background-color: white;
+    display: none;
+    position: absolute;
+    top: 60px;
+}
+.dropdown ul li{
+    display: flex;
+    padding: 10px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+.dropdown ul li:hover{
+    background-color: #c7dcff;
+}
+.dropdown ul{
+    margin-top: 20px;
+}
+.dropdown ul li p{
+    margin-left: 10px;
+    font-size: 17px;
+}
+.block_div{
+    display: block;
+}
+/* <!-- ============================= Add bar ================================ --> */
+
+.ad_img img{
+    width: 800px;
+    height: 230px;
+    position: relative;
+    z-index: -1;
+}
+.ad_img{
+    width: 800px;
+    margin: auto;
+    margin-top: 20px;
+    height: 200px;
+    position: relative;
+}
+/* <!-- ============================= Product Image ================================ --> */
+
+.product_img{
+    width: 1200px;
+    display: flex;
+    margin: auto;
+    margin-bottom: 100px;
+    margin-top: 50px;
+}
+.image_description{
+    width: 800px;
+}
+main {
+    width: 70%;
+    height: 500px;
+    margin-top: 40px;
+    box-shadow: 0 0 3px grey;
+    position: relative;
+    left: 180px;
+    overflow: hidden;
+    z-index: -3;
+  }
+  .slide {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
+  .nav {
+    text-align: center;
+  }
+  .nav button {
+    font-size: 25px;
+    padding: 5px;
+  }
+/* <!-- ============================= Description ================================ --> */
+.description{
+    padding-left: 20px;
+    border: 1px solid rgb(179, 178, 178);
+    border-radius: 5px;
+    background-color: white;
+    padding-bottom: 15px;
+}
+.description h3{
+    padding: 10px 10px 10px 0;
+    font-size: 20px;
+}
+.description p{
+    line-height: 20px;
+    color: rgb(51, 51, 51);
+}
+/* <!-- ============================= Product Details ================================ --> */
+
+.product_details{
+    width: 400px;
+    margin-left: 10px;
+}
+
+
+/* <!-- ============================= Box ================================ --> */
+.box{
+    background-color: white;
+    border: 1px solid rgb(179, 178, 178);
+    border-radius: 5px;
+}
+.price{
+    display: flex;
+    justify-content: space-between;
+}
+.price h3{
+    font-size: 30px;
+    font-weight: bold;
+    padding: 10px;
+}
+.box span{
+    color: #757674;
+    padding: 0 0 10px 10px;
+}
+.location{
+    display: flex;
+    justify-content: space-between;
+    font-size: 11px;
+    padding: 15px 10px 15px;
+}
+/* <!-- ============================= Box2 ================================ --> */
+.seller_details img{
+width: 55px;
+border-radius: 50%;
+margin: 10px 10px 8px 10px; 
+}
+.seller_details{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.seller_description{
+    font-size: 17px;
+    color: #212f34;
+    padding: 10px 0 5px 10px;
+}
+.seller_details h2{
+    font-size: 18px;
+}
+.seller_details p{
+    font-size: 13px;
+}
+.box a{
+    text-decoration: none;
+    color: black;
+    padding: 10px 125px;
+    border: 2px solid black;
+    margin: 10px;
+    transition: all 0.3s;
+}
+.box a:hover{
+    border: 2px solid black;
+}
+#box2{
+    height: 170px;
+    margin-top: 10px;
+}
+/* <!-- ============================= Box3 ================================ --> */
+
+#box3{
+    margin-top: 10px;
+}
+#box3 h2{
+    font-size: 18px;
+    padding: 15px;
+
+}
+#box3 p{
+    font-size: 13px;
+    padding: 0 0 10px 15px;
+}
+#box3 img{
+    width: 390px;
+    padding: 0 15px;
+    padding-bottom: 10px;
+}

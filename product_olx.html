@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="product_olx.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <title>Product</title>
+  </head>
+  <body>
+    <!-- =============================navbar================================ -->
+
+    <div class="header">
+      <div class="navbar">
+        <img src="OLX-Logo.png" />
+
+        <div class="country_select" id="country">
+          <div class="select">
+            <p id="text">Select Your Country</p>
+          </div>
+
+          <ul class="option_box" id="list">
+            <li class="option" onclick="myfunction('USA')">
+              <p>USA</p>
+            </li>
+            <li class="option" onclick="myfunction('Canada')">
+              <p>Canada</p>
+            </li>
+            <li class="option" onclick="myfunction('India')">
+              <p>India</p>
+            </li>
+            <li class="option" onclick="myfunction('Afganistan')">
+              <p>Afganistan</p>
+            </li>
+            <li class="option" onclick="myfunction('Nepal')">
+              <p>Nepal</p>
+            </li>
+          </ul>
+        </div>
+        <div class="search-box">
+          <input
+            type="text"
+            class="searchclass"
+            id="searchid"
+            placeholder="Find Cars, mobile Phone and More" />
+        </div>
+
+        <div class="language">
+          <p id="eng_tag">English</p>
+
+          <ul class="hin_eng">
+            <li onclick="languageolx('English')">English</li>
+            <li onclick="languageolx('Farsi')">Farsi</li>
+          </ul>
+        </div>
+
+        <div class="yuor_logo">
+          <div class="girls_img" id="girl_img_id">
+            <img src="image/1.jpg" alt="" />
+          </div>
+
+          <div class="dropdown" id="dropdownid">
+            <div class="nameandimg">
+              <img src="image/1.jpg" />
+              <p>Puja varma</p>
+            </div>
+
+            <ul>
+              <li>
+                <p>My Account</p>
+              </li>
+              <li>
+                <p>My Order</p>
+              </li>
+              <li>
+                <p>Help</p>
+              </li>
+              <li>
+                <p>Settings</p>
+              </li>
+              <li>
+                <p>Log Out</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- =============================Add no 1================================ -->
+
+    <div class="ad_img">
+      <img src="images (1).jpeg" />
+    </div>
+
+    <!-- ============================= Product Image ================================ -->
+
+    <div class="product_img">
+      <div class="image_description">
+        <main>
+          <img src="image/10.png" class="slide" />
+          <img src="image/11.png" class="slide" />
+          <img src="image/12.png" class="slide" />
+          <img src="image/13.png" class="slide" />
+          <img src="image/14.png" class="slide" />
+        </main>
+        <div class="nav">
+          <button onclick="goprev()">Prev</button>
+          <button onclick="gonext()">Next</button>
+        </div>
+        <div class="description">
+          <h3>Description</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
+            Repellendus, odit facilis voluptate suscipit itaque nihil eveniet
+            <br />
+            blanditiis modi?
+          </p>
+        </div>
+      </div>
+
+      <div class="product_details">
+        <div class="box">
+          <div class="price">
+            <h3>3,500</h3>
+          </div>
+          <span>Mi Tv Stick</span>
+          <div class="location">
+            <p>Ghatapar, Mumbai Maharashtra</p>
+            <p>Today</p>
+          </div>
+        </div>
+        <div class="box" id="box2">
+          <p class="seller_description">Seller Description</p>
+          <div class="seller_details">
+            <img src="image/17.jpg" />
+            <div>
+              <h2>Akash</h2>
+              <p>November since 2022</p>
+            </div>
+          </div>
+          <a href="olx_chatbox.html"> Chat with Seller</a>
+        </div>
+        <div class="box" id="box3">
+          <h2>posted in</h2>
+          <p>Bandra East, Mumbai</p>
+          <img src="location.webp" />
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+      let country = document.getElementById("country");
+      let text = document.getElementById("text");
+      let list = document.getElementById("list");
+
+      country.addEventListener("click", () => {
+        list.classList.toggle("hidden");
+      });
+      function myfunction(frk) {
+        text.innerHTML = frk;
+      }
+
+      let eng_tag = document.getElementById("eng_tag");
+      let hin_eng = document.querySelector(".hin_eng");
+      let language = document.querySelector(".language");
+      language.addEventListener("click", () => {
+        hin_eng.classList.toggle("display_div");
+      });
+
+      function languageolx(anyone) {
+        eng_tag.innerHTML = anyone;
+      }
+
+      let girls_img_id = document.getElementById("girl_img_id");
+      let dropdown = document.querySelector(".dropdown");
+
+      girls_img_id.addEventListener("click", () => {
+        dropdown.classList.toggle("block_div");
+      });
+
+      //  ============================= Product Image ================================
+
+      let slides = document.querySelectorAll(".slide");
+      let counter = 0;
+      slides.forEach((slide, index) => {
+        slide.style.bottom = `${index * 100}%`;
+      });
+
+      function gonext() {
+        counter++;
+        slideShow();
+      }
+      function goprev() {
+        counter--;
+        slideShow();
+      }
+      function slideShow() {
+        slides.forEach((slide) => {
+          slide.style.transform = `translateY(${counter * 100}%)`;
+        });
+      }
+    </script>
+  </body>
+</html>

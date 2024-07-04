@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="olx_style.css" />
+    <title>olx</title>
+  </head>
+  <body>
+    <!-- =============================navbar================================ -->
+    <div class="header">
+      <div class="navbar">
+        <img src="OLX-Logo.png" />
+
+        <div class="country_select" id="country">
+          <div class="select">
+            <p id="text">Select Your Country</p>
+          </div>
+
+          <ul class="option_box" id="list">
+            <li class="option" onclick="myfunction('USA')">
+              <p>USA</p>
+            </li>
+            <li class="option" onclick="myfunction('Canada')">
+              <p>Canada</p>
+            </li>
+            <li class="option" onclick="myfunction('India')">
+              <p>India</p>
+            </li>
+            <li class="option" onclick="myfunction('Afganistan')">
+              <p>Afganistan</p>
+            </li>
+            <li class="option" onclick="myfunction('Nepal')">
+              <p>Nepal</p>
+            </li>
+          </ul>
+        </div>
+        <div class="search-box">
+          <input
+            type="text"
+            class="searchclass"
+            id="searchid"
+            placeholder="Find Cars, mobile Phone and More" />
+        </div>
+
+        <div class="language">
+          <p id="eng_tag">English</p>
+
+          <ul class="hin_eng">
+            <li onclick="languageolx('English')">English</li>
+            <li onclick="languageolx('Farsi')">Farsi</li>
+          </ul>
+        </div>
+
+        <div class="yuor_logo">
+          <div class="girls_img" id="girl_img_id">
+            <img src="image/1.png" alt="" />
+          </div>
+
+          <div class="dropdown" id="dropdownid">
+            <div class="nameandimg">
+              <img src="image/1.png" />
+              <p>Puja varma</p>
+            </div>
+
+            <ul>
+              <li>
+                <p>My Account</p>
+              </li>
+              <li>
+                <p>My Order</p>
+              </li>
+              <li>
+                <p>Help</p>
+              </li>
+              <li>
+                <p>Settings</p>
+              </li>
+              <li>
+                <p>Log Out</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- =============================Add no 1================================ -->
+
+    <div class="ad_img">
+      <img src="images (1).jpeg" />
+    </div>
+
+    <!-- ============================= Product ================================ -->
+
+    <div class="product">
+      <div class="first_row">
+        <div class="box">
+          <a href="product_olx.html">
+            <img src="image/1.png" />
+            <h2>200 $</h2>
+            <p>Mi Tv Stick</p>
+            <div class="addres_data">
+              <p>Bandra East, mumbai</p>
+              <p>Today</p>
+            </div>
+          </a>
+        </div>
+        <div class="box">
+          <a href=""></a>
+          <img src="image/2.jpg" />
+          <h2>400 $</h2>
+          <p>Mi Tv Stick</p>
+          <div class="addres_data">
+            <p>Bandra East, mumbai</p>
+            <p>Today</p>
+          </div>
+        </div>
+        <div class="box">
+          <a href=""></a>
+          <img src="image/3.jpg" />
+          <h2>100 $</h2>
+          <p>Mi Tv Stick</p>
+          <div class="addres_data">
+            <p>Bandra East, mumbai</p>
+            <p>Today</p>
+          </div>
+        </div>
+        <div class="box">
+          <a href=""></a>
+          <img src="image/4.jpg" />
+          <h2>250 $</h2>
+          <p>Mi Tv Stick</p>
+          <div class="addres_data">
+            <p>Bandra East, mumbai</p>
+            <p>Today</p>
+          </div>
+        </div>
+      </div>
+      <div class="first_row">
+        <div class="box">
+          <a href=""></a>
+          <img src="image/5.jpg" />
+          <h2>2450 $</h2>
+          <p>Mi Tv Stick</p>
+          <div class="addres_data">
+            <p>Bandra East, mumbai</p>
+            <p>Today</p>
+          </div>
+        </div>
+        <div class="box">
+          <a href=""></a>
+          <img src="image/6.jpg" />
+          <h2>570 $</h2>
+          <p>Mi Tv Stick</p>
+          <div class="addres_data">
+            <p>Bandra East, mumbai</p>
+            <p>Today</p>
+          </div>
+        </div>
+        <div class="box">
+          <a href=""></a>
+          <img src="image/7.png" />
+          <h2>780 $</h2>
+          <p>Mi Tv Stick</p>
+          <div class="addres_data">
+            <p>Bandra East, mumbai</p>
+            <p>Today</p>
+          </div>
+        </div>
+        <div class="box">
+          <a href=""></a>
+          <img src="image/8.png" />
+          <h2>670 $</h2>
+          <p>Mi Tv Stick</p>
+          <div class="addres_data">
+            <p>Bandra East, mumbai</p>
+            <p>Today</p>
+          </div>
+        </div>
+      </div>
+      <div class="first_row">
+        <div class="box">
+          <a href=""></a>
+          <img src="image/9.png" />
+          <h2>1230 $</h2>
+          <p>Mi Tv Stick</p>
+          <div class="addres_data">
+            <p>Bandra East, mumbai</p>
+            <p>Today</p>
+          </div>
+        </div>
+        <div class="box">
+          <a href=""></a>
+          <img src="image/10.png" />
+          <h2>40 $</h2>
+          <p>Mi Tv Stick</p>
+          <div class="addres_data">
+            <p>Bandra East, mumbai</p>
+            <p>Today</p>
+          </div>
+        </div>
+        <div class="box">
+          <a href=""></a>
+          <img src="image/11.png" />
+          <h2>100 $</h2>
+          <p>Mi Tv Stick</p>
+          <div class="addres_data">
+            <p>Bandra East, mumbai</p>
+            <p>Today</p>
+          </div>
+        </div>
+        <div class="box">
+          <a href=""></a>
+          <img src="image/12.png" />
+          <h2>2300 $</h2>
+          <p>Mi Tv Stick</p>
+          <div class="addres_data">
+            <p>Bandra East, mumbai</p>
+            <p>Today</p>
+          </div>
+        </div>
+      </div>
+      <div class="first_row">
+        <div class="box">
+          <a href=""></a>
+          <img src="image/13.png" />
+          <h2>600 $</h2>
+          <p>Mi Tv Stick</p>
+          <div class="addres_data">
+            <p>Bandra East, mumbai</p>
+            <p>Today</p>
+          </div>
+        </div>
+        <div class="box">
+          <a href=""></a>
+          <img src="image/14.png" />
+          <h2>2300 $</h2>
+          <p>Mi Tv Stick</p>
+          <div class="addres_data">
+            <p>Bandra East, mumbai</p>
+            <p>Today</p>
+          </div>
+        </div>
+        <div class="box">
+          <a href=""></a>
+          <img src="image/15.png" />
+          <h2>9000 $</h2>
+          <p>Mi Tv Stick</p>
+          <div class="addres_data">
+            <p>Bandra East, mumbai</p>
+            <p>Today</p>
+          </div>
+        </div>
+        <div class="box">
+          <a href=""></a>
+          <img src="image/16.png" />
+          <h2>800 $</h2>
+          <p>Mi Tv Stick</p>
+          <div class="addres_data">
+            <p>Bandra East, mumbai</p>
+            <p>Today</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============================= read More ================================ -->
+
+    <div class="lode_more">
+      <button id="lode_more_id">Load More</button>
+    </div>
+
+    <div class="lode-more_products" id="lode_more_products_id">
+      <div class="first_row">
+        <div class="box">
+          <a href=""></a>
+          <img src="image/17.png" />
+          <h2>2000 $</h2>
+          <p>Mi Tv Stick</p>
+          <div class="addres_data">
+            <p>Bandra East, mumbai</p>
+            <p>Today</p>
+          </div>
+        </div>
+        <div class="box">
+          <a href=""></a>
+          <img src="image/18.png" />
+          <h2>4000 $</h2>
+          <p>Mi Tv Stick</p>
+          <div class="addres_data">
+            <p>Bandra East, mumbai</p>
+            <p>Today</p>
+          </div>
+        </div>
+        <div class="box">
+          <a href=""></a>
+          <img src="image/19.png" />
+          <h2>230 $</h2>
+          <p>Mi Tv Stick</p>
+          <div class="addres_data">
+            <p>Bandra East, mumbai</p>
+            <p>Today</p>
+          </div>
+        </div>
+        <div class="box">
+          <a href=""></a>
+          <img src="image/20.png" />
+          <h2>2523 $</h2>
+          <p>Mi Tv Stick</p>
+          <div class="addres_data">
+            <p>Bandra East, mumbai</p>
+            <p>Today</p>
+          </div>
+        </div>
+      </div>
+      <div class="first_row">
+        <div class="box">
+          <a href=""></a>
+          <img src="image/21.png" />
+          <h2>2450 $</h2>
+          <p>Mi Tv Stick</p>
+          <div class="addres_data">
+            <p>Bandra East, mumbai</p>
+            <p>Today</p>
+          </div>
+        </div>
+        <div class="box">
+          <a href=""></a>
+          <img src="image/22.png" />
+          <h2>570 $</h2>
+          <p>Mi Tv Stick</p>
+          <div class="addres_data">
+            <p>Bandra East, mumbai</p>
+            <p>Today</p>
+          </div>
+        </div>
+        <div class="box">
+          <a href=""></a>
+          <img src="image/23.png" />
+          <h2>780 $</h2>
+          <p>Mi Tv Stick</p>
+          <div class="addres_data">
+            <p>Bandra East, mumbai</p>
+            <p>Today</p>
+          </div>
+        </div>
+        <div class="box">
+          <a href=""></a>
+          <img src="image/24.png" />
+          <h2>670 $</h2>
+          <p>Mi Tv Stick</p>
+          <div class="addres_data">
+            <p>Bandra East, mumbai</p>
+            <p>Today</p>
+          </div>
+        </div>
+      </div>
+      <div class="first_row">
+        <div class="box">
+          <a href=""></a>
+          <img src="image/25.png" />
+          <h2>1230 $</h2>
+          <p>Mi Tv Stick</p>
+          <div class="addres_data">
+            <p>Bandra East, mumbai</p>
+            <p>Today</p>
+          </div>
+        </div>
+        <div class="box">
+          <a href=""></a>
+          <img src="image/26.png" />
+          <h2>40 $</h2>
+          <p>Mi Tv Stick</p>
+          <div class="addres_data">
+            <p>Bandra East, mumbai</p>
+            <p>Today</p>
+          </div>
+        </div>
+        <div class="box">
+          <a href=""></a>
+          <img src="image/27.png" />
+          <h2>100 $</h2>
+          <p>Mi Tv Stick</p>
+          <div class="addres_data">
+            <p>Bandra East, mumbai</p>
+            <p>Today</p>
+          </div>
+        </div>
+        <div class="box">
+          <a href=""></a>
+          <img src="image/28.png" />
+          <h2>2300 $</h2>
+          <p>Mi Tv Stick</p>
+          <div class="addres_data">
+            <p>Bandra East, mumbai</p>
+            <p>Today</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============================= 2Add ================================ -->
+
+    <div class="ad_img2">
+      <img src="googlee.jpg" />
+    </div>
+
+    <!-- ============================= Footer ================================ -->
+
+    <div class="main_footer">
+      <div class="footer">
+        <div class="footer_box">
+          <h2>POPULAR LOCATIONS</h2>
+          <p>Kolkata</p>
+          <p>Mumbai</p>
+          <p>chennai</p>
+          <p>Puna</p>
+        </div>
+        <div class="footer_box">
+          <h2>TRENDING LOCATIONS</h2>
+          <p>Andkhoi</p>
+          <p>Maharashtra</p>
+          <p>Haydrabad</p>
+          <p>juhu</p>
+        </div>
+        <div class="footer_box">
+          <h2>ABOUT US</h2>
+          <p>About OLX Group</p>
+          <p>Careers</p>
+          <p>Contact Us</p>
+          <p>OLX People</p>
+        </div>
+        <div class="footer_box">
+          <h2>OLX</h2>
+          <p>Help</p>
+          <p>Sitemap</p>
+          <p>Legal & Privecy</p>
+          <p>Blog</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="olx_script.js"></script>
+  </body>
+</html>
